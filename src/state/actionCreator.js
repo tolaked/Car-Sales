@@ -1,9 +1,9 @@
 import * as types from "./actionTypes";
 
-export function remove() {
-  return { type: types.REMOVEFEATURE };
+export function remove(item) {
+  return { type: types.REMOVEFEATURE, payload: item };
 }
 
-export function add() {
-  return { type: types.BUYITEM };
+export function add(item) {
+  return { type: types.BUYITEM, payload: item };
 }
